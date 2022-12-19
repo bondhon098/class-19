@@ -1,0 +1,295 @@
+
+/* banner */
+.banner{
+    background: url(./ia_200000019.jpg),rgba(0, 0, 0, 0.589);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 250px 0px;
+    background-blend-mode: overlay;
+    position: relative;
+}
+.header{
+    background: #24211b;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+}
+.menu{
+
+}
+.menu ul{
+    list-style: none;
+    margin-top:20px ;
+}
+.menu ul li:first-child{
+    color: #c69453;
+}
+.menu ul li{
+    display: inline-block;
+    position: relative;
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    padding: 0px 15px;
+    position: relative;
+    transition: .5s;
+}
+.menu ul li a:hover{
+    color: #c69453;
+}
+.menu ul li a::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid ;
+    color: #c69453;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu ul li a:hover::before{
+    content: "";
+    width: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid ;
+    color: #c69453;
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+.menu ul li a:hover::after{
+    content: "";
+    width: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.menu ul li ul{
+    position: absolute;
+    transition: .5s;
+    opacity: 0;
+    visibility: hidden;
+    top: 120%;
+    transform: scale(0);
+}
+.menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    transform-origin: bottom;
+}
+.menu ul li ul li{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+.menu ul li ul li:hover{
+    background: #c1c1c1;
+}
+.menu ul li ul li a{
+   color: black;
+}
+.menu ul li ul li a:hover{
+    
+}
+.banner-text h1{
+    text-transform: capitalize;
+    color: white;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.banner-text h5{
+    text-transform: uppercase;
+    color: white;
+    font-size: 25px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.banner-text h5::before{
+    content: "";
+    width: 50px;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 30%;
+    left: 32%;
+}
+.banner-text h5::after{
+    content: "";
+    width: 50px;
+    border-bottom: 2px solid white;
+    position: absolute;
+    top: 30%;
+    left: 63.5%;
+}
+.banner-text a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background: #c69453;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: .5s;
+}
+.banner-text a:hover{
+    background: white;
+    color: #24211b;
+}
+/* slider */
+.slider{
+    padding: 100px 0px;
+    background: #f8f8f8;
+    transition: 1s;
+}
+.slider-main{
+    background: #ffffff;
+    padding: 40px 10px;
+    text-align: center;
+}
+.slider-main img{
+    padding-bottom: 10px;
+}
+.slider-main h5{ 
+    text-transform: uppercase;
+    color: #293b4a;
+    padding-bottom: 10px;
+}
+.slider-main p{
+    color: #7b7c74;
+    padding-bottom: 10px;
+}
+.slider-main a{
+    text-decoration: none;
+    color: white;
+    background-color: #c69453;
+    text-transform: capitalize;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 5px;
+    transition: .5s;
+}
+.slider-main a:hover{
+    background-color: #f8f8f8;
+    color: #24211b;
+}
+.slider:hover .slider-main img{
+    transform: rotate(300deg);
+}
+/* about */
+.about{
+    padding: 100px 0px;
+    background: #f8f8f8;
+}
+.about-img img{
+    max-width: 100%;
+    height: 400px;
+}
+.about-text{
+    margin: 30px 0px;
+}
+.about-text h1{
+    text-transform: capitalize;
+    padding-bottom: 20px;
+}
+.about-text p{
+    padding-bottom: 10px;
+    text-transform: capitalize;
+    color: #7b7c74;
+}
+.about-text a{
+    text-decoration: none;
+    color: white;
+    background: black;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 8px 15px;
+}
+details{
+    text-transform: capitalize;
+}
+.get{
+    background: #f8f8f8a4;
+}
+.get-img{
+    max-width: 100%;
+}
+.get-img img{
+   width: 600px;
+   height: 500px;
+}
+.get-main{
+    padding-left: 150px;
+}
+.get-text p{
+    color: #7b7c74;
+    width: 400px;
+}
+.get-text h2{
+    padding-top: 50px;
+    text-transform: uppercase;
+}
+.get-form form input{
+    width: 350px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: none;
+    text-transform: capitalize;
+}
+.area{
+    width: 350px;
+    margin-bottom: 10px;
+    background: #ffffff;
+    border: none;
+    text-transform: capitalize;
+}
+.get-button a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    background: #c69453;
+    display: inline-block;
+    padding: 10px 15px;
+}
+/* foter */
+.foter{
+    padding: 20px 0px;
+    background: #6d6d6d;
+}
+.foter-text p span{
+    text-transform: uppercase;
+}
+.foter-text p{
+    text-transform: capitalize;
+    color: white;
+}
+.foter-icon{}
+.foter-icon ul{
+    list-style: none;
+}
+.foter-icon ul li{
+    display: inline-block;
+}
+.foter-icon ul li a{
+    text-decoration: none;
+    color: white;
+    padding-left:15px  ;
+}
